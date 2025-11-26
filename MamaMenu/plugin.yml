@@ -1,0 +1,10 @@
+name: MamaMenu
+main: MamaMenu\Main
+version: 1.0.0
+api: 5.0.0
+author: zeynmammadzada-cell
+description: FormAPI ile menü sistemi
+commands:
+  mama:
+    description: Mama menüsünü açar
+    permission: mamamenu.command
