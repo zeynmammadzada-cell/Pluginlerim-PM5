@@ -20,6 +20,10 @@ class Main extends PluginBase {
                 $sender->sendMessage("Bu komutu sadece oyuncular kullanabilir!");
                 return true;
             }
+            if (!$sender->hasPermission("mamamenu.command")) {
+                $sender->sendMessage("Bu komutu kullanma izniniz yok!");
+                return true;
+            }
             $this->openMamaMenu($sender);
             return true;
         }
